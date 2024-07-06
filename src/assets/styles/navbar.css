@@ -1,0 +1,209 @@
+.navbar {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #12406f;
+    color: #ffffff;
+    z-index: 2000;
+}
+  
+.navbar h1 {
+    margin-left: 76px;
+    color: #ffffff;
+    font-size: 26px;
+}
+  
+.ullist {
+    display: flex;
+    list-style: none;
+}
+  
+.navbutton {
+    margin: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 42px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background: #12406f;
+}
+  
+.navbutton img {
+    height: 7px;
+    margin: 6px;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+  
+.navbutton:hover {
+    background: #0f365e;
+    transform: translateY(-1px);
+}
+  
+.ullist li:hover .dropdown-list {
+    display: block;
+}
+  
+.navbutton-last {
+    margin: 4px;
+    background: #ffffff;
+    color: #12406f;
+    margin-right: 60px;
+    width: 100px;
+    height: 42px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.navbutton-last:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+}
+  
+.dropdown-list {
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    background: #ffffff;
+    min-width: 135px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+  
+.dropdown-list a {
+    display: block;
+    text-decoration: none;
+    color: #12406f;
+    padding: 8px;
+    padding-left: 12px;
+    text-align: left;
+}
+  
+.dropdown-list a:hover {
+    transform: translateY(-1px);
+}
+  
+.sidedrawer {
+    display: none;
+}
+  
+.backdrop-hidden {
+    display: none;
+}
+  
+.sidedrawer-hidden {
+    display: none;
+}
+  
+.sidedrawer-open {
+    display: none;
+    margin-right: 50px;
+}
+  
+@media screen and (max-width: 1122px) {
+    .navbar li {
+      display: none;
+    }
+  
+    .sidedrawer {
+      display: block;
+      bottom: 0;
+      width: 220px;
+      left: 0;
+      top: 72px;
+      background-color: #ffffff;
+      z-index: 1600;
+      text-align: left;
+      position: fixed;
+      padding-left: 20px;
+      padding-right: 20px;
+      transform: translateX(0);
+      transition: transform 0.3s ease-out;
+    }
+  
+    .sidedrawer-hidden {
+      display: block;
+      bottom: 0;
+      width: 220px;
+      top: 72px;
+      background-color: #ffffff;
+      z-index: 1600;
+      text-align: left;
+      position: fixed;
+      padding-left: 20px;
+      padding-right: 20px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-out;
+    }
+  
+    .sidebutton {
+      text-align: left;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .sidedrawerlist:hover .sidedrawer-dropdowns {
+      display: block;
+    }
+  
+    .sidedrawer-dropdowns {
+      display: none;
+      z-index: 2000;
+      background: #ffffff;
+      min-width: 80%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+  
+    .sidedrawer-dropdowns a {
+      display: block;
+      text-decoration: none;
+      color: #12406f;
+      padding: 8px;
+      padding-left: 12px;
+      text-align: left;
+    }
+  
+    .sidedrawer-dropdowns a:hover {
+      transform: translateY(-1px);
+    }
+  
+    .sidedrawer-open {
+      display: block;
+    }
+  
+    .backdrop {
+      display: block;
+      position: fixed;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 100%;
+      top: 72px;
+      z-index:1500;
+    }
+}

@@ -1,0 +1,75 @@
+.subscribe {
+    margin: 88px;
+    margin-bottom: 0px;
+    padding: 8px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.subscribe-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+  
+.subscribe-box .carousel-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+  
+.subscribe-info {
+    text-align: left;
+    max-width: 479px;
+    padding-right: 8px;
+}
+  
+.subscribe-img {
+    height: 304px;
+}
+  
+@media screen and (max-width: 1200px) {
+    .subscribe {
+      margin: 22px;
+      margin-bottom: 0px;
+      padding: 8px;
+      padding-bottom: 0px;
+    }
+}
+  
+@media screen and (max-width: 980px) {
+    .subscribe {
+      flex-wrap: wrap;
+    }
+  
+    .subscribe-img {
+      height: 250px;
+    }
+  }
+  
+@media screen and (max-width: 580px) {
+    .subscribe {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .subscribe-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .subscribe-info h1 {
+      text-align: center;
+    }
+  
+    .subscribe-img {
+      height: 150px;
+      weight: auto;
+    }
+}

@@ -1,0 +1,50 @@
+.minicaraousel-content {
+    width:360px;
+    min-height:200px;
+    background:#12406F;
+    border-radius:20px;
+    padding:16px;
+    margin-right:24px;
+    text-align: left;
+    color:#FFFFFF;
+}
+
+.minicaraousel-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width:115px;
+    padding-top:8px;
+    padding-bottom:8px;
+    transform: translateY(0);
+	transition: transform 150ms, box-shadow 150ms;
+    cursor:pointer;
+}
+
+.minicaraousel-btn:hover {
+    transform: translateY(-1px);
+}
+
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    margin-left:62px
+}
+
+.product-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+  @media screen and (max-width: 1200px) {
+    .product-carousel {
+      margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .minicaraousel-content {
+        max-width:150px;
+    }
+}

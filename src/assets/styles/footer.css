@@ -1,0 +1,100 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(../images/Group 17432.png);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 426px;
+    padding-top:26px;
+}
+  
+.footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 88px;
+    padding: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+  
+.footer-div-n {
+    width: 33.33%;
+    color: #ffffff;
+    text-align: left;
+}
+  
+.footer-follow {
+    width: 33.33%;
+    color: #ffffff;
+    text-align: center;
+}
+  
+.footer-follow div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+  
+.footer-social {
+    margin: 8px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+}
+  
+.footer-social:hover {
+    transform: translateY(-2px);
+    transition-duration: 500ms;
+    opacity: 0.5;
+}
+  
+.footer-address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 12px;
+}
+  
+.footer-address img {
+    margin-right: 12px;
+    margin-top: 6px;
+}
+  
+.footer-rights {
+    padding: 2px;
+    background: #002f5f;
+    color: #ffffff;
+}
+  
+@media screen and (max-width: 980px) {
+    .footer-div {
+      flex-wrap: wrap;
+    }
+  
+    .footer-div h3 {
+      text-align: center;
+    }
+  
+    .footer-div-n {
+      width: 100%;
+    }
+  
+    .footer-follow {
+      width: 100%;
+    }
+}
+  
+@media screen and (max-width: 1200px) {
+    .footer-div {
+      margin: 22px;
+      margin-top: 0px;
+      padding: 8px;
+    }
+}
+
+

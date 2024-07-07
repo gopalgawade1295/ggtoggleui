@@ -81,8 +81,18 @@
     .exam-content h1 {
       text-align: center;
     }
+
+    .title {
+      max-width:100%;
+    }
   
     .exam-content .title {
       text-align: center;
     }
+}
+
+.exam-content h1 {
+  margin:0px;
+  line-height-top:normal;
+  padding-top:20px
 }

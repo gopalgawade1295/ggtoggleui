@@ -22,13 +22,13 @@ const MiniCarousel = () => {
       } else {
         btnpressnext();
       }
-    }, 1000);
+    }, 2000);
   }, [count]);
 
   useEffect(() => {
     const id = setInterval(() => {
       setCount((count + 1) % 7);
-    }, 1000);
+    }, 2000);
 
     setIntervalId(id);
 

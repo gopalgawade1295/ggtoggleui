@@ -1,5 +1,6 @@
 .card-container {
     padding:22px;
+	margin-top:46px;
 	padding-left: 88px;
     padding-right: 88px;
     background:#F6F6F6;
@@ -51,4 +52,25 @@
 	.card-content {
 		min-width:100%
 	}
+}
+
+.card-content h1{
+	font-size: 60px;
+	line-height: normal;
+	margin:0px
+}
+
+.card-content p{
+	line-height: normal;
+	font-size:18px;
+}
+
+.card-content h4{
+	font-size: 20px;
+	line-height: 1.6;
+	margin:0px;
+}
+
+.article p {
+	font-size:16px;
 }

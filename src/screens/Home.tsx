@@ -5,13 +5,15 @@ import Subscribe from '../components/Subscribe'
 import Card from '../components/Card'
 import Examinations from "../components/Examinations";
 import MiniCarousel from "../components/MiniCarousel";
+import Slider from '../components/Slider'
 
 const Home = () => {
     return (
         <div style={{ marginTop: "50px" }}>
             <Carousel />
             <Examinations />
-            <MiniCarousel />
+            {/*<MiniCarousel />*/}
+            <Slider/>
             <Card />
             <Faq />
             <Subscribe />

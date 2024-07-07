@@ -84,7 +84,7 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <div className={show ? "sidedrawer" : "sidedrawer-hidden"}>
+            <div className={show ? "sidedrawer" : "sidedrawer-hidden"} style={{paddingTop:"30px"}}>
                 {list.map((v) => {
                     return (
                         <div className="sidedrawerlist" key={v.id}>

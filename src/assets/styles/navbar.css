@@ -124,6 +124,12 @@
     display: none;
     margin-right: 50px;
 }
+
+@media screen and (max-width: 1122px) {
+  .navbar h1 {
+    margin-left:16px;
+  }
+}
   
 @media screen and (max-width: 1122px) {
     .navbar li {
@@ -206,4 +212,10 @@
       top: 72px;
       z-index:1500;
     }
+}
+
+.sidebutton p {
+  font-size:18px;
+  color:#12406f;
+  line-height:normal
 }

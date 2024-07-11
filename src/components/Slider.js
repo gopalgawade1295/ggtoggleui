@@ -1,30 +1,30 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import '../assets/styles/slider.css';
 import arrow from "../assets/images/Group 9275.png";
 
 const Slider = () => {
     const [count, setCount] = useState(0);
     const [down, setDown] = useState(false);
-    const [left, setLeft] = useState<any | null>(0);
-    const inputRef = useRef(document.createElement("div"))
+    const [left, setLeft] = useState(0);
+    const inputRef = useRef(null);
 
-    const mouseDown = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const mouseDown = (e) => {
         setCount(e.clientX);
         setDown(true);
     }
 
-    const mouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>): any => {
+    const mouseMove = (e) => {
         if (!down || !inputRef.current) return;
         e.preventDefault();
         const newval = (e.clientX - count) * 0.115
         inputRef.current.scrollLeft = left - newval;
     }
 
-    const mouseUp = (): void => {
+    const mouseUp = () => {
         setDown(false);
     }
 
-    const mouseScroll = (): void => {
+    const mouseScroll = () => {
         setLeft(inputRef.current.scrollLeft);
     }
 
@@ -43,6 +43,7 @@ const Slider = () => {
                         <div className="minicaraousel" key={i}>
                             <div className="minicaraousel-content">
                                 <h4>Lorem ipsum {i + 1}</h4>
+
                                 <p>
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                                     diam nonumy eirmod
@@ -51,7 +52,11 @@ const Slider = () => {
                                 <div className="minicaraousel-btn">
                                     <span>Know more</span>
 
-                                    <img src={arrow} alt="" style={{ height: "24px" }} />
+                                    <img
+                                        src={arrow}
+                                        alt=""
+                                        style={{ height: "24px" }}
+                                    />
                                 </div>
                             </div>
                         </div>

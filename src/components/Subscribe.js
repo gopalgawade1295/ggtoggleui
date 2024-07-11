@@ -1,4 +1,3 @@
-import React from "react";
 import arrow from "../assets/images/Polygon 1.png";
 import image from "../assets/images/Mask Group 72.png";
 import "../assets/styles/subscribe.css";
@@ -15,18 +14,28 @@ const Subscribe = () => {
             nonumy eirmod tempor invidunt ut labore et dolore magna
           </p>
 
-          <input type="email" placeholder="Enter your Email Address" />
+          <input
+            type="email"
+            placeholder="Enter your Email Address"
+          />
         </div>
 
         <button className="carousel-btn">
           <span>Subscribe Now</span>
 
-          <img src={arrow} alt="" />
+          <img
+            src={arrow}
+            alt=""
+          />
         </button>
       </div>
 
       <div>
-        <img src={image} alt="" className="subscribe-img" />
+        <img
+          src={image}
+          className="subscribe-img"
+          alt=""
+        />
       </div>
     </div>
   );

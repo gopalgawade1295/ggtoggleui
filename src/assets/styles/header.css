@@ -1,10 +1,10 @@
 .navbar {
     padding-left: 16px;
     padding-right: 16px;
+    position:fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: 100%;
     background-color: #12406f;
     color: #ffffff;
@@ -110,16 +110,16 @@
   
 .sidedrawer {
     display: none;
-    padding-top: "30px";
-}
-
-.sidedrawer-hidden {
-  display: none;
-  padding-top: "30px";
+    padding-top:30px;
 }
   
 .backdrop-hidden {
     display: none;
+}
+  
+.sidedrawer-hidden {
+    display: none;
+    padding-top:30px;
 }
   
 .sidedrawer-open {

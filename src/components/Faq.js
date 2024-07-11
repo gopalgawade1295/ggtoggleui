@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../assets/styles/accordian.css";
 import view from "../assets/images/add_circle_FILL0_wght300_GRAD-25_opsz48@2x.png";
 import close from "../assets/images/do_not_disturb_on_FILL1_wght100_GRAD200_opsz24.png";
 
 const Faq = () => {
-    const [show, setShow] = useState<any>("");
+    const [show, setShow] = useState("");
 
     const items = [
         {

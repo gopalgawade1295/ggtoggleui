@@ -1,20 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../assets/styles/navbar.css";
 import arrow from "../assets/images/Icon ionic-ios-arrow-down.png";
 import search from "../assets/images/Icon material-search.png";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-interface Navitems {
-    id: number;
-    title: string;
-    dropdownitems: Array<string>;
-}
-
 const Navbar = () => {
-    const [show, setShow] = useState<boolean>(false);
+    const [show, setShow] = useState(false);
 
-    const list: Array<Navitems> = [
+    const list = [
         {
             id: 1,
             title: "Qualifications",
@@ -35,7 +29,11 @@ const Navbar = () => {
             title: "Lorem ipsum",
             dropdownitems: ["Lorem ipsum A", "Lorem ipsum B", "Lorem ipsum C"],
         },
-        { id: 5, title: "Lorem ipsum", dropdownitems: ["Lorem D", "Lorem E"] },
+        {
+            id: 5,
+            title: "Lorem ipsum",
+            dropdownitems: ["Lorem D", "Lorem E"]
+        }
     ];
 
     return (
@@ -50,7 +48,10 @@ const Navbar = () => {
                                 <div className="navbutton">
                                     <p>{v.title}</p>
 
-                                    <img src={arrow} alt="" />
+                                    <img
+                                        src={arrow}
+                                        alt=""
+                                    />
                                 </div>
 
                                 <div className="dropdown-list">
@@ -68,7 +69,11 @@ const Navbar = () => {
 
                     <li>
                         <div className="navbutton">
-                            <img src={search} alt="search" style={{ height: "20px" }} />
+                            <img
+                                src={search}
+                                alt="search"
+                                style={{ height: "20px" }}
+                            />
                         </div>
                     </li>
 
@@ -79,12 +84,15 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className="sidedrawer-open" onClick={() => setShow(!show)}>
+                <div
+                    className="sidedrawer-open"
+                    onClick={() => setShow(!show)}
+                >
                     {show ? <CloseIcon /> : <MenuIcon />}
                 </div>
             </nav>
 
-            <div className={show ? "sidedrawer" : "sidedrawer-hidden"} style={{paddingTop:"30px"}}>
+            <div className={show ? "sidedrawer" : "sidedrawer-hidden"}>
                 {list.map((v) => {
                     return (
                         <div className="sidedrawerlist" key={v.id}>

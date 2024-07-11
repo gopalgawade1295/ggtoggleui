@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../assets/styles/carausel.css";
 import carouselimg from "../assets/images/Mask Group 99.png";
 import arrow from "../assets/images/Polygon 1.png";
 
 const Carousel = () => {
-    const [count, setCount] = useState<number>(0);
-    const [intervalId, setIntervalId] = useState<any>(null);
+    const [count, setCount] = useState(0);
+    const [intervalId, setIntervalId] = useState(null);
 
     const items = [
         {
@@ -46,7 +46,7 @@ const Carousel = () => {
 
     return (
         <div>
-            <div className="carousel" style={{ height: "510px" }}>
+            <div className="carousel">
                 <div className="carousel-wrapper">
                     {items.map((v, i) => {
                         return (

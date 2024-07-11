@@ -1,4 +1,3 @@
-import React from "react";
 import "../assets/styles/examinations.css";
 import clock from "../assets/images/Group 2645.png";
 

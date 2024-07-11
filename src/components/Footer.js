@@ -1,4 +1,3 @@
-import React from "react";
 import fb from "../assets/images/Icon awesome-facebook-f.png";
 import ln from "../assets/images/Icon awesome-linkedin.png";
 import im from "../assets/images/Icon awesome-instagram.png";
@@ -50,7 +49,7 @@ const Footer = () => {
 
           <p>
             Address: amet, consetetur sadipscing elitr, sed diam Email id:
-            eirmod tempor invidunt ut labore et dolore <br/> Phone no: 123456789
+            eirmod tempor invidunt ut labore et dolore <br /> Phone no: 123456789
           </p>
         </div>
 
@@ -61,7 +60,10 @@ const Footer = () => {
             {arr.map((v, i) => {
               return (
                 <div className="footer-social" key={i}>
-                  <img src={v} alt="" />
+                  <img
+                    src={v}
+                    alt=""
+                  />
                 </div>
               );
             })}
@@ -74,7 +76,11 @@ const Footer = () => {
           {items.map((v) => {
             return (
               <div className="footer-address" key={v.id}>
-                <img src={v.img} alt="" style={{ height: v.height }} />
+                <img
+                  src={v.img}
+                  alt=""
+                  style={{ height: v.height }}
+                />
 
                 <span>{v.title}</span>
               </div>
